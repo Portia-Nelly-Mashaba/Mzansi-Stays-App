@@ -31,6 +31,7 @@ import AdminOnlyRoute from './components/adminOnlyRoute/AdminOnlyRoute';
 
 
 
+
 const App = () => {
   
   return (
@@ -51,7 +52,7 @@ const App = () => {
         <Route path="/saved" element={<Saved />} />
         <Route path="/booking/history" element={<BookingHistory />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/admin/*" element={ <AdminOnlyRoute> <Admin /> </AdminOnlyRoute>} />
+        <Route path="/admin/*" element={<AdminOnlyRoute> <Admin/> </AdminOnlyRoute>} />
         {/* <Route path="*" element={<Error />} /> */}
       </Routes>
       {/* <Footer /> */}
